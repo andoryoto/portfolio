@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>座席表テンプレート</title>
+<style>
+  .seat-map {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  .seat {
+    width: 60px;
+    height: 60px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .aisle {
+    grid-column: 3;
+  }
+</style>
+</head>
+<body>
+
+<h2>会議室 座席表</h2>
+
+<div class="seat-map">
+  <div class="seat">1A</div>
+  <div class="seat">1B</div>
+  <div class="seat aisle"></div>
+  <div class="seat">1C</div>
+  <div class="seat">1D</div>
+  
+  <div class="seat">2A</div>
+  <div class="seat">2B</div>
+  <div class="seat aisle"></div>
+  <div class="seat">2C</div>
+  <div class="seat">2D</div>
+  
+  <!-- 繰り返し座席を追加してください -->
+</div>
+
+</body>
+</html>
